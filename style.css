@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+}
+.container{
+    display: flex;
+    justify-content: center
+}
+.innerbox>h1{
+    display: inline;
+    color:hsl(292, 42%, 14%);
+    margin-left: 10px;
+}
+.innerbox{
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+}
+.innerbox>img{
+    width: 30px;
+}
+.btn,.btn>p:hover{
+    color: hsl(292, 16%, 49%);
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: start;
+    border: none;
+    background-color: white;
+}
+.btn>p{
+    width: 70%;
+    font-weight: bold;
+    color: hsl(292, 42%, 14%);
+}
+.content>p{
+    width: 100%;
+    font-size: small;
+    line-height:1.5;
+    color: hsl(292, 16%, 49%);
+    padding: 10px;
+    padding-left: 0;
+    padding-bottom: 20px;
+    /* display: none; */
+}
+.content{
+    display: none;
+}
+.btn img{
+    position: absolute;
+    right: 20px;
+}
+#minus{
+    display: none;
+}
+.desktop{
+    display: none;
+}
+hr{
+    opacity: 0.1;
+}
+/* Responsive */
+@media(min-width:376px)
+{
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        width: 100%;
+    }
+    .innerbox{
+        width: 30%;
+        padding: 30px;
+    }
+    .btn>p{
+        width: 100%;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .btn>img{
+        width: 30px;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+}
